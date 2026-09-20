@@ -5,127 +5,161 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Activities in Vilanculos &amp; the Bazaruto Archipelago — Bahia Mar Club</title>
 <meta name="description" content="Guide to activities in Vilanculos and the Bazaruto Archipelago, Mozambique — island trips, diving, fishing, kitesurfing and more, for Bahia Mar guests and agents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream:#faf6ef;
-    --card:#fffdf9;
-    --ink:#23201c;
-    --muted:#6b6157;
-    --gold:#a8712f;
-    --gold-dark:#8f6027;
+    --cream:#faf8f4;
+    --card:#ffffff;
+    --ink:#1c1917;
+    --ink-soft:#44403c;
+    --muted:#78716c;
+    --gold:#a1620b;
+    --gold-dark:#8a5306;
+    --gold-bright:#c17d1a;
     --brown:#6b543c;
     --terracotta:#7d4a44;
-    --olive:#5f6139;
+    --olive:#556052;
+    --olive-bg:#e8ece2;
     --teal:#3d6873;
-    --line:#e7ddcc;
-    --radius:14px;
+    --line:#e7e0d4;
+    --sand:#f3ead9;
+    --radius:12px;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     background:var(--cream);
     color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    line-height:1.55;
+    font-family:'Montserrat',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
   }
   h1,h2,h3{
-    font-family:Georgia,"Times New Roman",serif;
-    font-weight:normal;
+    font-family:'Cormorant',Georgia,"Times New Roman",serif;
+    font-weight:500;
     color:var(--ink);
     margin:0 0 .4em;
+    letter-spacing:.01em;
   }
-  a{color:var(--gold-dark);}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 20px;}
+  a{color:var(--gold-dark);text-decoration-thickness:1px;text-underline-offset:2px;}
+  a:hover{color:var(--gold-bright);}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .rule{border:none;border-top:1px solid var(--line);margin:0;}
 
   header.site{
-    border-bottom:1px solid var(--line);
-    padding:18px 0;
+    padding:20px 0;
+    position:relative;
+    z-index:5;
   }
   header.site .wrap{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;}
-  header.site .brand{font-weight:700;letter-spacing:.08em;font-size:13px;}
-  header.site .place{color:var(--muted);letter-spacing:.08em;font-size:12px;}
+  header.site .brand{font-family:'Cormorant',serif;font-weight:600;letter-spacing:.14em;font-size:19px;}
+  header.site .place{color:var(--muted);letter-spacing:.12em;font-size:11px;text-transform:uppercase;}
 
-  .hero{padding:48px 0 28px;}
-  .hero h1{font-size:2.4em;max-width:14em;}
-  .hero p.lead{max-width:62ch;color:var(--ink);}
+  .hero{
+    position:relative;
+    padding:0 0 60px;
+    color:#fbf6ea;
+    background:
+      linear-gradient(180deg, rgba(28,25,23,.55) 0%, rgba(28,25,23,.68) 55%, rgba(28,25,23,.88) 100%),
+      url('images/dhow-island-trips.jpg') center 42% / cover no-repeat;
+  }
+  .hero .wrap{padding-top:52px;}
+  header.site{color:#fbf6ea;}
+  header.site .place{color:#e9dfc9;}
+  .hero h1{font-size:3.1em;max-width:15em;color:#fffaf0;text-shadow:0 2px 18px rgba(0,0,0,.25);}
+  .hero p.lead{max-width:60ch;color:#f1e9d8;font-size:16px;}
 
   .how-to-book{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-left:4px solid var(--gold);
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.22);
+    border-left:3px solid var(--gold-bright);
     border-radius:10px;
     padding:14px 18px;
-    margin:20px 0;
+    margin:26px 0;
     max-width:70ch;
+    color:#fbf6ea;
   }
-  .how-to-book strong{color:var(--gold-dark);}
+  .how-to-book strong{color:#f4d99a;}
 
   .info-strip{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:16px;
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-    padding:16px 0;
+    border-top:1px solid rgba(255,255,255,.22);
+    padding:20px 0 4px;
     margin-top:12px;
   }
-  .info-strip .label{font-size:11px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:4px;}
-  .info-strip .value{font-size:14px;}
+  .info-strip .label{font-size:11px;letter-spacing:.12em;color:#e9dfc9;text-transform:uppercase;margin-bottom:4px;}
+  .info-strip .value{font-size:14px;color:#fbf6ea;}
 
   .context-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:24px;
-    padding:36px 0;
+    gap:32px;
+    padding:52px 0 40px;
   }
-  .context-grid h3{font-size:1.15em;margin-bottom:.3em;}
-  .context-grid p{color:var(--ink);margin:0;}
+  .context-grid h3{font-size:1.4em;margin-bottom:.3em;}
+  .context-grid p{color:var(--ink-soft);margin:0;}
   .drone-note{
-    background:#f4ece0;
+    background:var(--sand);
     border:1px solid var(--line);
     border-radius:10px;
-    padding:16px 20px;
+    padding:18px 22px;
     margin-top:0;
   }
-  .drone-note h3{color:var(--terracotta);}
+  .drone-note h3{color:var(--terracotta);font-size:1.25em;}
+  .drone-note p{color:var(--ink-soft);}
 
-  section.rates{padding:24px 0 40px;}
-  section.rates p.muted{color:var(--muted);font-size:14px;margin-top:-6px;}
-  table.rates-table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border-radius:10px;overflow:hidden;}
+  section.rates{padding:16px 0 48px;}
+  section.rates h2{font-size:2em;}
+  section.rates p.muted{color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px;}
+  table.rates-table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(28,25,23,.05);}
   table.rates-table th{
-    text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
-    padding:10px 14px;border-bottom:1px solid var(--line);
+    text-align:left;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+    padding:12px 16px;border-bottom:1px solid var(--line);
   }
-  table.rates-table td{padding:10px 14px;border-bottom:1px solid var(--line);}
+  table.rates-table td{padding:12px 16px;border-bottom:1px solid var(--line);}
   table.rates-table tr:last-child td{border-bottom:none;}
-  table.rates-table td.rate{color:var(--gold-dark);white-space:nowrap;}
+  table.rates-table tr:hover td{background:var(--cream);}
+  table.rates-table td.rate{color:var(--gold-dark);font-weight:600;white-space:nowrap;}
 
-  section.activities{padding:12px 0 48px;}
-  section.activities > .wrap > h2{font-size:1.9em;margin-bottom:.6em;}
+  section.activities{padding:16px 0 56px;}
+  section.activities > .wrap > h2{font-size:2.1em;margin-bottom:.7em;}
 
   .filter-bar{
     display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
-    margin-bottom:24px;
-    position:sticky;top:0;background:var(--cream);padding:10px 0;z-index:10;
+    margin-bottom:28px;
+    position:sticky;top:0;
+    background:rgba(250,248,244,.82);
+    backdrop-filter:blur(10px) saturate(140%);
+    -webkit-backdrop-filter:blur(10px) saturate(140%);
+    padding:14px 0;z-index:10;
     border-bottom:1px solid var(--line);
   }
   .chips{display:flex;flex-wrap:wrap;gap:8px;}
   .chip{
+    display:inline-flex;align-items:center;gap:6px;
     border:1px solid var(--line);
     background:var(--card);
-    color:var(--ink);
-    padding:7px 14px;
+    color:var(--ink-soft);
+    padding:7px 15px;
     border-radius:999px;
     font-size:13px;
+    font-weight:500;
     cursor:pointer;
-    transition:background .15s,color .15s,border-color .15s;
+    transition:background .18s ease,color .18s ease,border-color .18s ease,transform .12s ease;
   }
-  .chip:hover{border-color:var(--gold);}
+  .chip svg{width:14px;height:14px;flex-shrink:0;}
+  .chip:hover{border-color:var(--gold);color:var(--ink);}
   .chip.active{background:var(--gold);border-color:var(--gold);color:#fff;}
   .kids-toggle{
     display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;
-    background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px;
-    user-select:none;
+    background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 15px;
+    user-select:none;transition:border-color .18s ease;
   }
   .kids-toggle input{accent-color:var(--gold);width:15px;height:15px;cursor:pointer;}
   .kids-toggle.active{border-color:var(--olive);}
@@ -133,7 +167,7 @@
   .card-grid{
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-    gap:22px;
+    gap:26px;
   }
   .activity-card{
     background:var(--card);
@@ -142,20 +176,23 @@
     overflow:hidden;
     display:flex;
     flex-direction:column;
+    transition:transform .22s ease,box-shadow .22s ease;
   }
+  .activity-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px -12px rgba(28,25,23,.22);}
   .activity-card.hide{display:none;}
   .card-photo{aspect-ratio:4/3;overflow:hidden;background:#eee2cf;}
-  .card-photo img{width:100%;height:100%;object-fit:cover;display:block;}
-  .card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
-  .card-eyebrow{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
-  .card-body h3{font-size:1.25em;margin-bottom:2px;}
+  .card-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease;}
+  .activity-card:hover .card-photo img{transform:scale(1.05);}
+  .card-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .card-eyebrow{display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .card-body h3{font-size:1.5em;margin-bottom:2px;}
   .tags{display:flex;flex-wrap:wrap;gap:6px;}
   .tag{
-    font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
-    background:#f1e8d8;color:var(--brown);
+    font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;
+    background:var(--sand);color:var(--brown);
     padding:3px 9px;border-radius:999px;
   }
-  .tag.kids{background:#e4ead9;color:var(--olive);}
+  .tag.kids{background:var(--olive-bg);color:var(--olive);}
   p.teaser{margin:2px 0 4px;font-size:14.5px;}
   dl.facts{margin:0;font-size:13.5px;}
   dl.facts div{display:flex;gap:6px;padding:2px 0;border-top:1px dashed var(--line);}
@@ -179,58 +216,65 @@
   p.no-results{display:none;color:var(--muted);text-align:center;padding:40px 0;}
   p.no-results.show{display:block;}
 
-  section.eating{padding:12px 0 40px;}
-  .eat-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px;}
-  .eat-grid h4{margin:0 0 4px;font-family:Georgia,serif;font-size:1.05em;letter-spacing:.02em;}
-  .eat-grid .onsite{color:var(--gold-dark);font-size:11px;letter-spacing:.08em;text-transform:uppercase;}
-  .eat-grid p{margin:2px 0 0;font-size:14px;color:var(--ink);}
+  section.eating{padding:16px 0 48px;}
+  section.eating h2{font-size:2em;}
+  .eat-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px 44px;}
+  .eat-grid h4{margin:0 0 4px;font-family:'Cormorant',Georgia,serif;font-weight:600;font-size:1.35em;letter-spacing:.01em;}
+  .eat-grid .onsite{color:var(--gold-dark);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;}
+  .eat-grid p{margin:2px 0 0;font-size:14px;color:var(--ink-soft);}
   .eat-grid a.menu-link{font-size:13px;}
 
-  section.contacts{padding:12px 0 40px;}
-  .contacts-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 40px;}
-  .contact-item h4{margin:0 0 2px;font-size:15px;}
+  section.contacts{padding:16px 0 48px;}
+  section.contacts h2{font-size:2em;}
+  .contacts-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 44px;}
+  .contact-item h4{margin:0 0 2px;font-size:15px;font-weight:600;}
   .contact-item p{margin:0;font-size:13.5px;color:var(--muted);}
   .contact-item a{display:block;font-size:13.5px;margin-top:2px;}
 
-  section.community{padding:12px 0 40px;}
-  .community-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
-  .community-grid h3{font-size:1.1em;}
+  section.community{padding:16px 0 48px;}
+  section.community h2{font-size:2em;}
+  .community-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .community-grid h3{font-size:1.4em;}
+  .community-grid p{color:var(--ink-soft);}
 
   .reception-box{
-    margin-top:28px;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:10px;
+    margin-top:28px;padding:20px 22px;background:var(--card);border:1px solid var(--line);border-radius:10px;
     font-size:14px;
   }
-  .reception-box h4{margin:0 0 4px;font-family:Georgia,serif;font-size:1.1em;}
+  .reception-box h4{margin:0 0 4px;font-family:'Cormorant',Georgia,serif;font-weight:600;font-size:1.3em;}
 
-  section.disclaimer{padding:20px 0 40px;border-top:1px solid var(--line);}
-  section.disclaimer h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+  section.disclaimer{padding:24px 0 48px;border-top:1px solid var(--line);}
+  section.disclaimer h4{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-weight:600;}
   .disclaimer-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px;font-size:12.5px;color:var(--muted);}
 
   footer.site{
-    text-align:center;padding:32px 20px 40px;color:var(--muted);font-size:13px;
+    text-align:center;padding:40px 20px 48px;color:var(--muted);font-size:13px;
     border-top:1px solid var(--line);
+    background:var(--sand);
   }
-  footer.site .wish{font-family:Georgia,serif;font-size:1.1em;color:var(--ink);margin-bottom:6px;}
+  footer.site .wish{font-family:'Cormorant',Georgia,serif;font-weight:600;font-size:1.5em;color:var(--ink);margin-bottom:6px;}
+  footer.site .place-line{letter-spacing:.1em;font-size:11.5px;}
 
   @media (max-width:760px){
     .context-grid,.eat-grid,.contacts-grid,.community-grid,.disclaimer-grid{grid-template-columns:1fr;}
     .info-strip{grid-template-columns:1fr;}
-    .hero h1{font-size:1.8em;}
-    .filter-bar{flex-direction:column;align-items:stretch;}
+    .hero{padding-bottom:44px;}
+    .hero .wrap{padding-top:28px;}
+    .hero h1{font-size:2em;}
+    .filter-bar{flex-direction:column;align-items:stretch;top:0;}
   }
 </style>
 </head>
 <body>
 
-<header class="site">
-  <div class="wrap">
-    <span class="brand">BAHIA MAR CLUB</span>
-    <span class="place">VILANCULOS · MOZAMBIQUE</span>
-  </div>
-</header>
-
 <main>
   <section class="hero">
+    <header class="site">
+      <div class="wrap">
+        <span class="brand">BAHIA MAR CLUB</span>
+        <span class="place">VILANCULOS · MOZAMBIQUE</span>
+      </div>
+    </header>
     <div class="wrap">
       <h1>Activities in Vilanculos and the Bazaruto Archipelago</h1>
       <p class="lead">Vilankulo and the Bazaruto Archipelago are world-famous for many beach holiday activities. Most are centred around the Indian Ocean which laps our shores with island trips, game fishing, scuba diving, kite-boarding and whale watching to name but a few.</p>
@@ -304,12 +348,30 @@
 
       <div class="filter-bar">
         <div class="chips" id="categoryChips">
-          <button class="chip active" data-filter="all">All</button>
-          <button class="chip" data-filter="on-site">On Site</button>
-          <button class="chip" data-filter="islands">Islands</button>
-          <button class="chip" data-filter="ocean">Ocean</button>
-          <button class="chip" data-filter="land">Land</button>
-          <button class="chip" data-filter="culture">Culture</button>
+          <button class="chip active" data-filter="all">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/></svg>
+            All
+          </button>
+          <button class="chip" data-filter="on-site">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg>
+            On Site
+          </button>
+          <button class="chip" data-filter="islands">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>
+            Islands
+          </button>
+          <button class="chip" data-filter="ocean">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0M2.25 19c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/></svg>
+            Ocean
+          </button>
+          <button class="chip" data-filter="land">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 20.25h19.5M3 20.25l6-10.5 4 6 2.5-3.5 5.5 8"/></svg>
+            Land
+          </button>
+          <button class="chip" data-filter="culture">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6M3 9v10.5A1.5 1.5 0 004.5 21h15a1.5 1.5 0 001.5-1.5V9M3 9h18"/></svg>
+            Culture
+          </button>
         </div>
         <label class="kids-toggle" id="kidsToggle">
           <input type="checkbox" id="kidsFilter">
@@ -967,7 +1029,7 @@
 
 <footer class="site">
   <div class="wish">We wish you a wonderful stay</div>
-  <div>BAHIA MAR CLUB · VILANCULOS · MOZAMBIQUE · BAHIAMARCLUB.COM</div>
+  <div class="place-line">BAHIA MAR CLUB · VILANCULOS · MOZAMBIQUE · BAHIAMARCLUB.COM</div>
 </footer>
 
 <script>
